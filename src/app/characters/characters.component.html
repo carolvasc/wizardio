@@ -1,7 +1,14 @@
 <div class="po-row">
-  <po-widget *ngFor="let characther of characthers" class="po-md-12 po-lg-4 po-mt-2" p-title={{characther.name}}>
+  <po-widget *ngFor="let characther of characthers" class="po-md-12 po-lg-4 po-mt-2 my-widget"
+    p-title={{characther.name}}>
     <img [src]="characther.image" alt="fotinha" class="image-dimensions">
     <div class="po-font-subtitle po-text-center">{{characther.house}}</div>
     <div class="po-text-center">{{characther.actor}}</div>
+
+    <!-- Modal Info -->
+    <app-modal [characther]="characther"></app-modal>
+
+    
+
   </po-widget>
 </div>

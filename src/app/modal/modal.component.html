@@ -1,0 +1,25 @@
+<po-modal #modal p-title="{{characther.name}}">
+  <div class="po-row">
+    <div class="po-md-4">
+      <p><b>Gender: </b> {{characther.gender}} </p>
+      <p class="po-mb-2"><b>Date of Birthday: </b> {{characther.dateOfBirth}} </p>
+
+      <p><b>Patronus: </b> {{characther.patronus}} </p>
+    </div>
+    <div class="po-md-4">
+      <h3 class="font-bolder">Wand</h3>
+      <p><b>Wood: </b> {{characther.wand.wood}}</p>
+      <p><b>Core: </b> {{characther.wand.core}}</p>
+      <p><b>Length: </b> {{characther.wand.length}}</p>
+
+    </div>
+    <div class="po-md-4">
+      <h3 class="font-bolder">Physical Characteristics</h3>
+      <p><b>Hair Colour: </b> {{characther.hairColour}} </p>
+      <p><b>Eye Colour: </b> {{characther.eyeColour}} </p>
+    </div>
+
+  </div>
+</po-modal>
+
+<po-button p-label="More info" (p-click)="modal.open()" style="float: right;"></po-button>

@@ -7,11 +7,13 @@ import { PoModule } from '@po-ui/ng-components';
 import { RouterModule } from '@angular/router';
 import { CharactersComponent } from './characters/characters.component';
 import { CharactersService } from './characters/characters.service';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CharactersComponent
+    CharactersComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
